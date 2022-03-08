@@ -60,6 +60,14 @@
                 android:layout_margin="5dp"
                 android:textColor="@color/secondary_text"
                 android:textSize="20dp" />
+            <TextView
+                android:id="@+id/Tv_salario"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="@color/secondary_text"
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/Tv_DeduccionISSS"
@@ -144,6 +152,14 @@
                 android:layout_margin="5dp"
                 android:textColor="@color/secondary_text"
                 android:textSize="20dp" />
+            <TextView
+                android:id="@+id/Tv_salario2"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="@color/secondary_text"
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/Tv_DeduccionISSS2"
@@ -219,6 +235,14 @@
 
             <TextView
                 android:id="@+id/Tv_HorasTrabajadas3"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="@color/secondary_text"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/Tv_salario3"
                 android:layout_width="376dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

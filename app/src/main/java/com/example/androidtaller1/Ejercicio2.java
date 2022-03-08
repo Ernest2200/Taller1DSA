@@ -77,7 +77,7 @@ public class Ejercicio2 extends AppCompatActivity {
                     System.out.println("Porcentaje Candidato 4:"+String.format("%.2f",PorcentajeC4) +"%");
 
                     Resultados.setText("Candidato 1 - Votos: " + Contador1 + " con un porcentaje del " + String.format("%.2f", PorcentajeC1) + "%" + "\n"+"\n"
-                            + "Candidato 2 - Votos: " + Contador2 + " con un porcentaje " + String.format("%.2f", PorcentajeC2) + "%" + "\n"+ "\n"
+                            + "Candidato 2 - Votos: " + Contador2 + " con un porcentaje del " + String.format("%.2f", PorcentajeC2) + "%" + "\n"+ "\n"
                             + "Candidato 3 - Votos: " + Contador3 + " con un porcentaje del " + String.format("%.2f", PorcentajeC3) + "%" + "\n" + "\n" +
                             "Candidato 4 - Votos: " + Contador4 + " con un porcentaje del " + String.format("%.2f", PorcentajeC4) + "%" + "\n" + "\n" +
                             "Hubo un total de " + ContadorVotoNulos + " Votos Nulos: " +  " con un porcentaje del " + String.format("%.2f", PorcentajeVotosNulos) + "%"

@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 public class MostrarInfo extends AppCompatActivity {
 
-    String TxtNombre1, TxtHoras1, TxtDeduccionISSS1, TxtDeduccionAFP1, TxtDeduccionRenta, TxtSueldoDeducciones1, Mensaje,Mensaje2,Mensaje3,MensajePorcentaje,MensajePorcentaje2,MensajePorcentaje3, TxtSueldoFinal1;
-    String TxtNombre2, TxtHoras2, TxtDeduccionISSS2, TxtDeduccionAFP2, TxtDeduccionRenta2, TxtSueldoDeducciones2, MensajeBono2, TxtSueldoFinal2;
-    String TxtNombre3, TxtHoras3, TxtDeduccionISSS3, TxtDeduccionAFP3, TxtDeduccionRenta3, TxtSueldoDeducciones3, MensajeBono3, TxtSueldoFinal3;
+    String TxtNombre1, TxtHoras1,TxtSalario, TxtDeduccionISSS1, TxtDeduccionAFP1, TxtDeduccionRenta, TxtSueldoDeducciones1, Mensaje,Mensaje2,Mensaje3,MensajePorcentaje,MensajePorcentaje2,MensajePorcentaje3, TxtSueldoFinal1;
+    String TxtNombre2, TxtHoras2,TxtSalario2, TxtDeduccionISSS2, TxtDeduccionAFP2, TxtDeduccionRenta2, TxtSueldoDeducciones2, MensajeBono2, TxtSueldoFinal2;
+    String TxtNombre3, TxtHoras3,TxtSalario3, TxtDeduccionISSS3, TxtDeduccionAFP3, TxtDeduccionRenta3, TxtSueldoDeducciones3, MensajeBono3, TxtSueldoFinal3;
     String TxtSalarioMax,TxtSalarioMin,TxtGananMas300;
     String NombreMax , NombreMin;
     @Override
@@ -22,6 +22,7 @@ public class MostrarInfo extends AppCompatActivity {
         Button btn1 = findViewById(R.id.btnsalir);
         TextView Nombre1 = findViewById(R.id.Tv_NombreEmpleado);
         TextView Horas1 = findViewById(R.id.Tv_HorasTrabajadas);
+        TextView Sueldo = findViewById(R.id.Tv_salario);
         TextView DeduccionISSS = findViewById(R.id.Tv_DeduccionISSS);
         TextView DeduccionAFP = findViewById(R.id.Tv_DeduccionAFP);
         TextView DeduccionRenta = findViewById(R.id.Tv_DeduccionRENTA);
@@ -31,6 +32,7 @@ public class MostrarInfo extends AppCompatActivity {
 
         TextView Nombre2 = findViewById(R.id.Tv_NombreEmpleado2);
         TextView Horas2 = findViewById(R.id.Tv_HorasTrabajadas2);
+        TextView Sueldo2 = findViewById(R.id.Tv_salario2);
         TextView DeduccionISSS2 = findViewById(R.id.Tv_DeduccionISSS2);
         TextView DeduccionAFP2 = findViewById(R.id.Tv_DeduccionAFP2);
         TextView DeduccionRenta2 = findViewById(R.id.Tv_DeduccionRENTA2);
@@ -40,6 +42,7 @@ public class MostrarInfo extends AppCompatActivity {
 
         TextView Nombre3 = findViewById(R.id.Tv_NombreEmpleado3);
         TextView Horas3 = findViewById(R.id.Tv_HorasTrabajadas3);
+        TextView Sueldo3 = findViewById(R.id.Tv_salario3);
         TextView DeduccionISSS3 = findViewById(R.id.Tv_DeduccionISSS3);
         TextView DeduccionAFP3 = findViewById(R.id.Tv_DeduccionAFP3);
         TextView DeduccionRenta3 = findViewById(R.id.Tv_DeduccionRENTA3);
@@ -105,6 +108,8 @@ public class MostrarInfo extends AppCompatActivity {
         Nombre1.setText("Nombre Completo Empleado: " + TxtNombre1);
         TxtHoras1 = bundle.getString("HorasTrabajadas1");
         Horas1.setText("Horas Trabajadas: " + TxtHoras1);
+        TxtSalario = bundle.getString("Sueldo");
+        Sueldo.setText("Sueldo: " + TxtSalario);
         TxtDeduccionISSS1 = bundle.getString("DeduccionISSS");
         DeduccionISSS.setText("Deducción ISSS: " + "$" + TxtDeduccionISSS1);
         TxtDeduccionAFP1 = bundle.getString("DeduccionAFP");
@@ -116,12 +121,14 @@ public class MostrarInfo extends AppCompatActivity {
 
         BonoMensaje.setText(Mensaje + MensajePorcentaje);
         TxtSueldoFinal1 = bundle.getString("SueldoFinal");
-        SueldoFinal.setText("Sueldo Final: " + "$" + TxtSueldoFinal1);
+        SueldoFinal.setText("Sueldo líquido: " + "$" + TxtSueldoFinal1);
 
         TxtNombre2 = bundle.getString("NombreEmpleado2");
         Nombre2.setText("Nombre Completo Empleado: " + TxtNombre2);
         TxtHoras2 = bundle.getString("HorasTrabajadas2");
         Horas2.setText("Horas Trabajadas: " + TxtHoras2);
+        TxtSalario2 = bundle.getString("Sueldo2");
+        Sueldo2.setText("Sueldo: " + TxtSalario2);
         TxtDeduccionISSS2 = bundle.getString("DeduccionISSS2");
         DeduccionISSS2.setText("Deducción ISSS: " + "$" + TxtDeduccionISSS2);
         TxtDeduccionAFP2 = bundle.getString("DeduccionAFP2");
@@ -133,12 +140,13 @@ public class MostrarInfo extends AppCompatActivity {
         MensajeBono2 = bundle.getString("BonoMensaje2");
         BonoMensaje2.setText(Mensaje2 + MensajePorcentaje2);
         TxtSueldoFinal2 = bundle.getString("SueldoFinal2");
-        SueldoFina2.setText("Sueldo Final: " + "$" + TxtSueldoFinal2);
-
+        SueldoFina2.setText("Sueldo líquido: " + "$" + TxtSueldoFinal2);
         TxtNombre3 = bundle.getString("NombreEmpleado3");
         Nombre3.setText("Nombre Completo Empleado: " + TxtNombre3);
         TxtHoras3 = bundle.getString("HorasTrabajadas3");
         Horas3.setText("Horas Trabajadas: " + TxtHoras3);
+        TxtSalario3 = bundle.getString("Sueldo3");
+        Sueldo3.setText("Sueldo: " + TxtSalario3);
         TxtDeduccionISSS3 = bundle.getString("DeduccionISSS3");
         DeduccionISSS3.setText("Deducción ISSS: " + "$" + TxtDeduccionISSS3);
         TxtDeduccionAFP3 = bundle.getString("DeduccionAFP3");
@@ -150,13 +158,13 @@ public class MostrarInfo extends AppCompatActivity {
 
         BonoMensaje3.setText(Mensaje3 + MensajePorcentaje3);
         TxtSueldoFinal3 = bundle.getString("SueldoFinal3");
-        SueldoFina3.setText("Sueldo Final: " + "$" + TxtSueldoFinal3);
+        SueldoFina3.setText("Sueldo líquido: " + "$" + TxtSueldoFinal3);
 
         NombreMax = bundle.getString("NombreMax");
         NombreMin = bundle.getString("NombreMin");
 
         TxtSalarioMax = bundle.getString("SalarioMax");
-        SalarioMax.setText("El salario maximo  pertenece a "+ NombreMax + " con el total de: " +"$"+ TxtSalarioMax);
+        SalarioMax.setText("El salario máximo  pertenece a "+ NombreMax + " con el total de: " +"$"+ TxtSalarioMax);
 
         TxtSalarioMin = bundle.getString("SalarioMin");
         SalarioMin.setText("El salario minimo  pertenece a "+ NombreMin + " con el total de: " +"$"+ TxtSalarioMin);

@@ -638,6 +638,7 @@ public class Ejercicio3 extends AppCompatActivity {
                 System.out.println(Mensaje + MensajePorcentaje);
                 b.putString("NombreEmpleado1", datos[0].toString());
                 b.putString("HorasTrabajadas1", HorasEmpleado1.toString());
+                b.putString("Sueldo", Sueldo.toString());
                 b.putString("Cargo", ObtenerCargo);
                 b.putString("DeduccionISSS", String.format("%.2f", DeduccionISS1));
                 b.putString("DeduccionAFP", String.format("%.2f", DeduccionAFP1));
@@ -648,6 +649,7 @@ public class Ejercicio3 extends AppCompatActivity {
 
                 b.putString("NombreEmpleado2", datos[1].toString());
                 b.putString("HorasTrabajadas2", HorasEmpleado2.toString());
+                b.putString("Sueldo2", Sueldo2.toString());
                 b.putString("Cargo2", ObtenerCargo2);
                 b.putString("DeduccionISSS2", String.format("%.2f", DeduccionISS2));
                 b.putString("DeduccionAFP2", String.format("%.2f", DeduccionAFP2));
@@ -658,6 +660,7 @@ public class Ejercicio3 extends AppCompatActivity {
 
                 b.putString("NombreEmpleado3", datos[2].toString());
                 b.putString("HorasTrabajadas3", HorasEmpleado3.toString());
+                b.putString("Sueldo3", Sueldo3.toString());
                 b.putString("Cargo3", ObtenerCargo3);
                 b.putString("DeduccionISSS3", String.format("%.2f", DeduccionISS3));
                 b.putString("DeduccionAFP3", String.format("%.2f", DeduccionAFP3));
