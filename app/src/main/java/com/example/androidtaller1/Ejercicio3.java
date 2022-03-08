@@ -537,7 +537,7 @@ public class Ejercicio3 extends AppCompatActivity {
                         ResulBono3 = SueldoLiquido3 * BonoPorcentaje1;
                     }
                     if (ObtenerCargo3 == "Asistente") {
-                        ResulHoras3 = HorasEmpleado2 - RestaHoras;
+                        ResulHoras3 = HorasEmpleado3 - RestaHoras;
                         Double PrimeraHPagadas = RestaHoras * 9.75;
                         Double RestantesHPagadas = ResulHoras3 * 11.50;
                         Sueldo3 = PrimeraHPagadas + RestantesHPagadas;
